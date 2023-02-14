@@ -1,0 +1,13 @@
+# oc apply -f https://raw.githubusercontent.com/openshift-labs/learn-katacoda/master/middleware/pipelines/assets/tasks/hello.yaml
+# run: tkn task start --showlog hello
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: hello
+spec:
+  steps:
+    - name: say-hello
+      image: registry.access.redhat.com/ubi8/ubi
+      command:
+        - /bin/bash
+      args: ["-c", "echo Hello World"]
