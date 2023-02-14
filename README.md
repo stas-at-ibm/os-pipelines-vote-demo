@@ -2,7 +2,7 @@
 
 This demo showcases Openshift pipelines with Tekton. Tasks and a pipeline are created and the pipeline triggered via the Tekton cli. The pipeline fetches code from a Github repo and deploys it to the cluster. Finally the app can be accessed via a route.
 
-## Prererequesites
+## Prerequisites
 
 - Openshift 4.11+
 - Red Hat Pipeline Operator
