@@ -4,7 +4,7 @@ This demo showcases Openshift pipelines with Tekton. Tasks and a pipeline are cr
 
 ## Prererequesites
 
-- Openshift
+- Openshift 4.11+
 - Red Hat Pipeline Operator
 - Tekton CLI
 - PVC: `oc apply -f pipelines/source.yaml`
